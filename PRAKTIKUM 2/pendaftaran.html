@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Form Pendaftaran Mahasiswa Baru</title>
+</head>
+<body>
+
+    <main>
+        <h1>Form Pendaftaran Mahasiswa Baru</h1>
+        <p>Politeknik Negeri Malang — Tahun Akademik 2025/2026</p>
+
+        <form action="#" method="POST" enctype="multipart/form-data">
+            
+            <fieldset>
+                <legend>Data Pribadi</legend>
+                
+                <label for="nik">NIK (16 digit):</label><br>
+                <input type="text" id="nik" name="nik" pattern="[0-9]{16}" maxlength="16" placeholder="3507xxxxxxxxxx" required>
+                <br><br>
+
+                <label for="nama_lengkap">Nama Lengkap:</label><br>
+                <input type="text" id="nama_lengkap" name="nama_lengkap" minlength="3" maxlength="100" placeholder="Nama sesuai ijazah" required>
+                <br><br>
+
+                <label for="tgl_lahir">Tanggal Lahir:</label><br>
+                <input type="date" id="tgl_lahir" name="tgl_lahir" min="1990-01-01" max="2010-12-31" required>
+                <br><br>
+
+                <p style="margin-bottom: 5px;">Jenis Kelamin:</p>
+                <input type="radio" name="jk" id="laki" value="L" required>
+                <label for="laki">Laki-laki</label>
+                <input type="radio" name="jk" id="perempuan" value="P" required>
+                <label for="perempuan">Perempuan</label>
+                <br><br>
+
+                <label for="no_hp">Nomor HP (WhatsApp aktif):</label><br>
+                <input type="tel" id="no_hp" name="no_hp" pattern="[0-9]{10,13}" placeholder="08123456789" required>
+                <br><br>
+
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" placeholder="nama@email.com" required>
+            </fieldset>
+            <br>
+
+            <fieldset>
+                <legend>Data Akademik</legend>
+                
+                <label for="prodi">Program Studi Pilihan:</label><br>
+                <select id="prodi" name="prodi" required>
+                    <option value="">-- Pilih Program Studi --</option>
+                    <optgroup label="Jurusan Teknologi Informasi">
+                        <option value="TI">D4 Teknologi Informasi</option>
+                        <option value="SI">D4 Sistem Informasi</option>
+                    </optgroup>
+                    <optgroup label="Jurusan Teknik Informatika">
+                        <option value="TK">D4 Teknik Informatika</option>
+                    </optgroup>
+                </select>
+                <br><br>
+
+                <label for="nilai_un">Nilai Rata-rata Rapor:</label><br>
+                <input type="number" id="nilai_un" name="nilai_un" min="0" max="100" step="0.01" required>
+                <br><br>
+
+                <label for="foto">Upload Foto 3x4 (JPG/PNG maks 2MB):</label><br>
+                <input type="file" id="foto" name="foto" accept="image/jpeg,image/png" required>
+            </fieldset>
+            <br>
+
+            <fieldset>
+                <legend>Pernyataan</legend>
+                
+                <label for="alamat">Alamat Lengkap:</label><br>
+                <textarea id="alamat" name="alamat" rows="4" cols="50" placeholder="Jalan, RT/RW, Kelurahan, Kecamatan, Kabupaten, Provinsi" required></textarea>
+                <br><br>
+
+                <input type="checkbox" id="pernyataan" name="pernyataan" required>
+                <label for="pernyataan">
+                    Saya menyatakan bahwa data yang diisi adalah benar dan dapat dipertanggungjawabkan.
+                </label>
+            </fieldset>
+            <br>
+
+            <button type="submit">Kirim Pendaftaran</button>
+            <button type="reset">Hapus Isian</button>
+        </form>
+    </main>
+
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Tutorial HTML5 untuk pemula">
+    <title>Blog Teknologi — Tips HTML5 untuk Pemula</title>
+</head>
+<body>
+
+    <header>
+        <hgroup>
+            <h1>Blog Teknologi Polinema</h1>
+            <p>Berbagi pengetahuan seputar pemrograman web</p>
+        </hgroup>
+        <nav aria-label="Navigasi utama">
+            <ul>
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="blog.html" aria-current="page">Blog</a></li>
+                <li><a href="tentang.html">Tentang</a></li>
+                <li><a href="kontak.html">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <article>
+            <header>
+                <h2>10 Tips HTML5 yang Wajib Diketahui Pemula</h2>
+                <p>
+                    Ditulis oleh <strong>Gunawan</strong> pada
+                    <time datetime="2025-01-15">15 Januari 2025</time>
+                </p>
+                <p>Kategori: <a href="#">HTML/CSS</a> | Waktu baca: 5 menit</p>
+            </header>
+
+            <figure>
+                <img src="https://via.placeholder.com/800x300?text=HTML5+Tips" alt="Ilustrasi tips HTML5" width="800">
+                <figcaption>Gambar 1. Elemen-elemen semantik dalam HTML5</figcaption>
+            </figure>
+
+            <section>
+                <h3>Pendahuluan</h3>
+                <p>
+                    HTML5 membawa banyak <mark>fitur baru yang revolusioner</mark> dibanding
+                    versi sebelumnya. Sebagai pemula, memahami dasar-dasar ini akan memberikan
+                    fondasi yang kuat untuk pengembangan web modern.
+                </p>
+            </section>
+
+            <section>
+                <h3>Tips Utama</h3>
+                <ol>
+                    <li>
+                        <h4>Selalu gunakan DOCTYPE</h4>
+                        <p><code>&lt;!DOCTYPE html&gt;</code> wajib ada di baris pertama. Tanpanya, browser masuk ke 'quirks mode'.</p>
+                    </li>
+                    <li>
+                        <h4>Manfaatkan Elemen Semantik</h4>
+                        <p>Ganti <code>&lt;div id='header'&gt;</code> dengan <code>&lt;header&gt;</code> yang lebih bermakna.</p>
+                    </li>
+                    <li>
+                        <h4>Jangan Lewatkan Atribut Alt pada Gambar</h4>
+                        <p>Atribut <code>alt</code> penting untuk aksesibilitas dan SEO.</p>
+                    </li>
+                </ol>
+            </section>
+
+            <aside>
+                <h4>Artikel Terkait</h4>
+                <ul>
+                    <li><a href="#">Mengenal CSS Flexbox</a></li>
+                    <li><a href="#">JavaScript untuk Pemula</a></li>
+                    <li><a href="#">Responsive Design dengan Media Query</a></li>
+                </ul>
+                
+                <h4>Tentang Penulis</h4>
+                <address>
+                    <p><strong>Gunawan, S.Kom., M.T.</strong></p>
+                    <p>Dosen Teknologi Informasi, Politeknik Negeri Malang</p>
+                    <p>Email: <a href="mailto:gunawan@polinema.ac.id">gunawan@polinema.ac.id</a></p>
+                </address>
+            </aside>
+
+            <footer>
+                <p>Tags: <a href="#">HTML5</a>, <a href="#">Web Development</a></p>
+                <p>Terakhir diperbarui: <time datetime="2025-02-01">1 Februari 2025</time></p>
+            </footer>
+        </article>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Blog Teknologi Polinema. All rights reserved.</p>
+        <nav aria-label="Footer navigation">
+            <a href="#">Kebijakan Privasi</a> |
+            <a href="#">Syarat & Ketentuan</a> |
+            <a href="#">Peta Situs</a>
+        </nav>
+    </footer>
+
+</body>
+</html>

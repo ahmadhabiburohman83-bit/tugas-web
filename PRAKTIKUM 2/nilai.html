@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Data Nilai Mahasiswa</title>
+    <style>
+        /* Styling tabel sederhana inline untuk tampilan lebih rapi */
+        table { border-collapse: collapse; width: 100%; }
+        th, td { border: 1px solid #ddd; padding: 8px; text-align: center; }
+        th { background-color: #1565C0; color: white; }
+        tr:nth-child(even) { background-color: #f2f2f2; }
+        .grade-a { background-color: #c8e6c9; font-weight: bold; }
+        .grade-b { background-color: #fff9c4; }
+    </style>
+</head>
+<body>
+
+    <h1>Daftar Nilai Mahasiswa</h1>
+    <h2>Mata Kuliah: Pemrograman Web — Semester Genap 2024/2025</h2>
+
+    <table>
+        <caption>Kelas: 1 TI A</caption>
+        <thead>
+            <tr>
+                <th rowspan="2">NIM</th>
+                <th rowspan="2">Nama Mahasiswa</th>
+                <th colspan="3">Komponen Nilai</th>
+                <th rowspan="2">Rata-rata</th>
+                <th rowspan="2">Grade</th>
+            </tr>
+            <tr>
+                <th>Tugas (30%)</th>
+                <th>UTS (30%)</th>
+                <th>UAS (40%)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>2301001</td>
+                <td>Ahmad Fauzi</td>
+                <td>88</td><td>85</td><td>90</td>
+                <td><strong>88.1</strong></td>
+                <td class="grade-a">A</td>
+            </tr>
+            <tr>
+                <td>2301002</td>
+                <td>Siti Nurhayati</td>
+                <td>75</td><td>80</td><td>78</td>
+                <td>77.9</td>
+                <td class="grade-b">B+</td>
+            </tr>
+            
+            <tr>
+                <td>2301003</td>
+                <td>Budi Santoso</td>
+                <td>90</td><td>92</td><td>95</td>
+                <td><strong>92.6</strong></td>
+                <td class="grade-a">A</td>
+            </tr>
+            <tr>
+                <td>2301004</td>
+                <td>Dian Sastrowardoyo</td>
+                <td>70</td><td>75</td><td>80</td>
+                <td>75.5</td>
+                <td class="grade-b">B+</td>
+            </tr>
+            <tr>
+                <td>2301005</td>
+                <td>Eko Prasetyo</td>
+                <td>85</td><td>80</td><td>85</td>
+                <td><strong>83.5</strong></td>
+                <td class="grade-a">A</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="5"><strong>Rata-rata Kelas</strong></td>
+                <td><strong>83.5</strong></td> 
+                <td>-</td>
+            </tr>
+        </tfoot>
+    </table>
+
+</body>
+</html>

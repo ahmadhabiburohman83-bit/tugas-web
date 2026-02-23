@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="https://via.placeholder.com/32x32?text=P">
+    <title>Portofolio - Profil Website</title>
+    <style>
+        /* CSS Sederhana agar posisi <aside> berada di samping konten utama (jika di layar lebar) */
+        .container { display: flex; gap: 20px; flex-wrap: wrap; }
+        .content { flex: 3; min-width: 300px; }
+        .sidebar { flex: 1; min-width: 250px; background-color: #f4f4f4; padding: 15px; border-radius: 8px; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Galeri Portofolio</h1>
+        <nav aria-label="Navigasi Utama">
+            <a href="index.html">Beranda</a> | 
+            <a href="tentang.html">Tentang Saya</a> | 
+            <a href="portofolio.html" aria-current="page">Portofolio</a> | 
+            <a href="kontak.html">Kontak</a>
+        </nav>
+        <hr>
+    </header>
+
+    <main class="container">
+        <div class="content">
+            <section aria-labelledby="portofolio-title">
+                <h2 id="portofolio-title">Karya & Eksplorasi</h2>
+                
+                <article>
+                    <h3>1. Game Arcade: Pac-Man (Versi Scratch)</h3>
+                    <p>
+                        Proyek ini dikembangkan sebagai tugas akhir kelulusan Sekolah Menengah Atas (SMA). 
+                        Game ini mengadaptasi mekanik klasik Pac-Man menggunakan logika pemrograman visual blok. 
+                        Pemain harus mengumpulkan skor sambil menghindari rintangan labirin.
+                    </p>
+                    
+                    <figure>
+                        <img src="https://via.placeholder.com/600x300?text=Gameplay+Pac-Man+Scratch" alt="Tangkapan layar gameplay Pac-Man menggunakan Scratch" width="100%">
+                        <figcaption>Gambar 1. Tangkapan layar dari level pertama game Pac-Man.</figcaption>
+                    </figure>
+
+                    <h4>Mainkan Langsung!</h4>
+                    <iframe src="https://scratch.mit.edu/projects/1220861850/embed" allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe>
+                </article>
+
+                <hr>
+
+                <article>
+                    <h3>2. Eksplorasi Seni Digital</h3>
+                    <p>
+                        Selain pemrograman, saya juga bereksperimen dengan <em>prompt engineering</em> untuk 
+                        menghasilkan karya seni digital dengan tema spesifik, seperti karakter bergaya anime 
+                        dalam latar dunia distopia.
+                    </p>
+                    <figure>
+                        <img src="https://via.placeholder.com/600x300?text=Anime+Dystopian+Art" alt="Ilustrasi karakter anime di dunia distopia" width="100%">
+                        <figcaption>Gambar 2. Konsep karakter dalam latar kota siber-distopia.</figcaption>
+                    </figure>
+                </article>
+            </section>
+        </div>
+
+        <aside class="sidebar">
+            <h3>Repositori & Kontribusi</h3>
+            <p>
+                Saya menggunakan <strong>GitHub</strong> untuk mengelola versi dan berkolaborasi dalam proyek pemrograman. 
+                Pemahaman mengenai konfigurasi Git dan alur <em>pull request</em> sangat membantu saya dalam mengelola kode.
+            </p>
+            <ul>
+                <li><a href="#">Profil GitHub Saya</a></li>
+                <li><a href="#">Logika Pemrograman Python</a></li>
+            </ul>
+
+            <br>
+
+            <h3>Alat yang Dikuasai</h3>
+            <ul>
+                <li>Scratch (Logika Visual)</li>
+                <li>Python & HTML5</li>
+                <li>VS Code & Git</li>
+            </ul>
+        </aside>
+    </main>
+
+    <footer>
+        <hr>
+        <p>&copy; 2026 Proyek Mini HTML5. Hak Cipta Dilindungi.</p>
+    </footer>
+
+</body>
+</html>

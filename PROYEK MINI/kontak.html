@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="https://via.placeholder.com/32x32?text=P">
+    <title>Kontak - Profil Website</title>
+</head>
+<body>
+
+    <header>
+        <h1>Hubungi Saya</h1>
+        <nav aria-label="Navigasi Utama">
+            <a href="index.html">Beranda</a> | 
+            <a href="tentang.html">Tentang Saya</a> | 
+            <a href="portofolio.html">Portofolio</a> | 
+            <a href="kontak.html" aria-current="page">Kontak</a>
+        </nav>
+        <hr>
+    </header>
+
+    <main>
+        <h2>Mari Berkolaborasi!</h2>
+        <p>Jika Anda tertarik untuk berdiskusi tentang pengembangan web, sistem K3, atau sekadar menyapa, jangan ragu untuk menghubungi saya melalui informasi di bawah ini.</p>
+
+        <section aria-labelledby="audio-greeting">
+            <h3 id="audio-greeting">Pesan Suara Singkat</h3>
+            <audio controls>
+                <source src="https://www.w3schools.com/html/horse.ogg" type="audio/ogg">
+                Browser Anda tidak mendukung pemutar audio HTML5.
+            </audio>
+            <p><em>*Contoh pemutar audio (Memenuhi Tantangan Bonus)</em></p>
+        </section>
+
+        <section aria-labelledby="info-kontak">
+            <h3 id="info-kontak">Informasi Kontak & Lokasi</h3>
+            
+            <address>
+                <strong>Nama:</strong> [Nama Anda]<br>
+                <strong>Email:</strong> <a href="mailto:anda@student.polinema.ac.id">anda@student.polinema.ac.id</a><br>
+                <strong>Lokasi:</strong> Lumajang, Jawa Timur, Indonesia
+            </address>
+            <br>
+
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126442.2227129524!2d113.14074811979495!3d-8.118991206606001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd65d0fcaf667c3%3A0xc6226ff38a2e2671!2sKabupaten%20Lumajang%2C%20Jawa%20Timur!5e0!3m2!1sid!2sid!4v1700000000000!5m2!1sid!2sid" 
+                width="100%" 
+                height="300" 
+                style="border:0; border-radius: 8px;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                title="Peta Lokasi Lumajang">
+            </iframe>
+        </section>
+
+        <hr>
+
+        <section aria-labelledby="form-title">
+            <h3 id="form-title">Kirim Pesan</h3>
+            
+            <form action="#" method="POST">
+                <fieldset style="border-radius: 8px; padding: 15px;">
+                    <legend><strong>Formulir Kontak</strong></legend>
+                    
+                    <label for="nama">Nama Lengkap:</label><br>
+                    <input type="text" id="nama" name="nama" placeholder="Masukkan nama Anda" required minlength="3"><br><br>
+
+                    <label for="email_pengirim">Alamat Email:</label><br>
+                    <input type="email" id="email_pengirim" name="email_pengirim" placeholder="contoh@email.com" required><br><br>
+
+                    <label for="subjek">Subjek Pesan:</label><br>
+                    <select id="subjek" name="subjek" required>
+                        <option value="">-- Pilih Subjek --</option>
+                        <option value="Proyek Web">Tawaran Proyek Web</option>
+                        <option value="Diskusi K3">Diskusi & Analisis K3</option>
+                        <option value="Lainnya">Pertanyaan Lainnya</option>
+                    </select><br><br>
+
+                    <label for="pesan">Pesan Anda:</label><br>
+                    <textarea id="pesan" name="pesan" rows="5" style="width: 100%; max-width: 500px;" placeholder="Tuliskan pesan Anda di sini..." required minlength="10"></textarea><br><br>
+
+                    <button type="submit">Kirim Pesan</button>
+                    <button type="reset">Ulangi</button>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <hr>
+        <p>&copy; 2026 Proyek Mini HTML5. Hak Cipta Dilindungi.</p>
+    </footer>
+
+</body>
+</html>
